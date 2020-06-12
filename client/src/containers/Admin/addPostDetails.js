@@ -28,16 +28,17 @@ class AddPostDetails extends Component {
       const formData = {
          productName: this.state.productName,
          description: this.state.description,
-         imagePathName: this.props.filePath
+         imagePathName: this.props.filePath,
+         ownerId: this.props.user.authLogin.id
       };
 
       this.props.dispatch(addPost(formData))
-
 
    };
 
 
    render() {
+
       return (
           <div>
 
@@ -64,7 +65,7 @@ class AddPostDetails extends Component {
 
              {
                 this.props.post && this.props.post.newPost && this.props.post.newPost.post ?
-                    <div className="alert alert-success alert-dismissible fade show" role="alert">
+                    <div className="alert alert-success alert-dismissible fade show mt-2" role="alert">
                        Пост успешно добавлен!
                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">&times;</span>

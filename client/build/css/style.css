@@ -11307,8 +11307,8 @@ h1, h2, h3, h4, h5,
     padding-bottom: 1.5rem;
     padding-left: 20px;
     padding-right: 20px;
-    font-weight: 400;
-    color: #000000;
+    font-weight: bold;
+    color: #88AD3F;
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 1 !important;
@@ -11430,7 +11430,6 @@ h1, h2, h3, h4, h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #fff !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -11473,7 +11472,7 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light.scrolled .navbar-toggler {
     border: none;
-    color: rgba(0, 0, 0, 0.5) !important;
+    /*color: rgba(0, 0, 0, 0.5) !important;*/
     border-color: rgba(0, 0, 0, 0.5) !important;
     cursor: pointer;
     padding-right: 0;
@@ -11485,7 +11484,7 @@ h1, h2, h3, h4, h5,
 .ftco-navbar-light.scrolled .nav-link {
     padding-top: 0.9rem !important;
     padding-bottom: 0.9rem !important;
-    color: #000000 !important;
+    /*color: #000000 !important;*/
 }
 
 .ftco-navbar-light.scrolled .nav-link.active {
@@ -11497,6 +11496,7 @@ h1, h2, h3, h4, h5,
     -webkit-transition: .3s all ease-out;
     -o-transition: .3s all ease-out;
     transition: .3s all ease-out;
+    background: #000000 !important;
 }
 
 .ftco-navbar-light.scrolled.sleep {
@@ -11506,7 +11506,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light.scrolled .navbar-brand {
-    color: #000000;
+    color: #ffffff;
 }
 
 .navbar-brand {
@@ -11585,7 +11585,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     right: 0;
     top: -30px;
-    z-index: 99;
+    z-index: 1;
 }
 
 .mouse-icon {
@@ -12153,7 +12153,7 @@ h1, h2, h3, h4, h5,
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    border: 1px solid #f0f0f0;
+    border: 2px solid #f0f0f0;
 }
 
 @media (max-width: 991.98px) {
@@ -12893,7 +12893,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-    padding: 6em 0 3em 0;
+    padding: 6em 0 6em 0;
     position: relative;
 }
 

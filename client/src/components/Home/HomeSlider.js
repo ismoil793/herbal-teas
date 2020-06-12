@@ -4,7 +4,7 @@ import FontAwesome from "react-fontawesome";
 const HomeSlider = () => {
    return (
 
-       <React.Fragment>
+       <div>
 
           <section id="home-section" className="hero">
 
@@ -17,31 +17,31 @@ const HomeSlider = () => {
                          <div className="row slider-text justify-content-center align-items-center"
                               data-scrollax-parent="true">
 
-                            <div className="col-md-12 ftco-animate text-center">
-                               <h1 className="mb-2">We serve Fresh Vegestables &amp; Fruits</h1>
+                            <div className="col-md-12 text-center">
+                               <h1 className="mb-2">Натуральные травяные чаи</h1>
                                {/*<h2 className="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>*/}
-                               <p><a href="#" className="btn btn-primary">View Details</a></p>
+                               <p><a href="#watch-products" className="btn btn-primary">Посмотреть</a></p>
                             </div>
 
                          </div>
                       </div>
                    </div>
 
-                   <div className="slider-item" style={{backgroundImage: "url(images/bg_2.jpg)"}}>
-                      <div className="overlay"></div>
-                      <div className="container">
-                         <div className="row slider-text justify-content-center align-items-center"
-                              data-scrollax-parent="true">
+                   {/*<div className="slider-item" style={{backgroundImage: "url(images/bg_2.jpg)"}}>*/}
+                   {/*   <div className="overlay"></div>*/}
+                   {/*   <div className="container">*/}
+                   {/*      <div className="row slider-text justify-content-center align-items-center"*/}
+                   {/*           data-scrollax-parent="true">*/}
 
-                            <div className="col-sm-12 ftco-animate text-center">
-                               <h1 className="mb-2">100% Fresh &amp; Organic Foods</h1>
-                               {/*<h2 className="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>*/}
-                               <p><a href="#" className="btn btn-primary">View Details</a></p>
-                            </div>
+                   {/*         <div className="col-sm-12  text-center">*/}
+                   {/*            <h1 className="mb-2">100% Fresh &amp; Organic Foods</h1>*/}
+                   {/*            /!*<h2 className="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>*!/*/}
+                   {/*            <p><a href="#" className="btn btn-primary">View Details</a></p>*/}
+                   {/*         </div>*/}
 
-                         </div>
-                      </div>
-                   </div>
+                   {/*      </div>*/}
+                   {/*   </div>*/}
+                   {/*</div>*/}
                 </div>
              </div>
 
@@ -52,7 +52,7 @@ const HomeSlider = () => {
           <section className="ftco-section">
              <div className="container">
                 <div className="row no-gutters ftco-services">
-                   <div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                   <div className="col-md-3 text-center d-flex align-self-stretch ">
                       <div className="media block-6 services mb-md-0 mb-4">
                          <div
                              className="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
@@ -64,7 +64,7 @@ const HomeSlider = () => {
                          </div>
                       </div>
                    </div>
-                   <div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                   <div className="col-md-3 text-center d-flex align-self-stretch ">
                       <div className="media block-6 services mb-md-0 mb-4">
                          <div className="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
                             <FontAwesome name="leaf"/>
@@ -75,7 +75,7 @@ const HomeSlider = () => {
                          </div>
                       </div>
                    </div>
-                   <div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                   <div className="col-md-3 text-center d-flex align-self-stretch ">
                       <div className="media block-6 services mb-md-0 mb-4">
                          <div className="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
                             <FontAwesome name="certificate"/>
@@ -86,7 +86,7 @@ const HomeSlider = () => {
                          </div>
                       </div>
                    </div>
-                   <div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                   <div className="col-md-3 text-center d-flex align-self-stretch ">
                       <div className="media block-6 services mb-md-0 mb-4">
                          <div className="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
                             <FontAwesome name="phone"/>
@@ -100,7 +100,7 @@ const HomeSlider = () => {
                 </div>
              </div>
           </section>
-       </React.Fragment>
+       </div>
    );
 };
 

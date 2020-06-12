@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import FontAwesome from "react-fontawesome";
-import {Link} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
+import {connect} from "react-redux"
 
 // import "../../js/jquery-3.2.1.min"
 
 // import "../../js/range"
 
 
-
 class Header extends Component {
+
 
    render() {
       return (
@@ -48,19 +49,38 @@ class Header extends Component {
              <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
                   id="ftco-navbar">
                 <div className="container">
-                   <a href="/" className="navbar-brand">Vegefoods</a>
+                   <Link to="/" className="navbar-brand">Vegefoods</Link>
                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                       <FontAwesome name="bars"/>&nbsp;Меню
                    </button>
 
                    <div className="collapse navbar-collapse" id="ftco-nav">
-                      <ul className="navbar-nav ml-auto">
-                         <li className="nav-item"><a href="/products" className="nav-link">Продукты</a></li>
-                         <li className="nav-item"><a href="/about" className="nav-link">О нас</a></li>
-                         <li className="nav-item"><a href="/contact" className="nav-link">Контакты</a></li>
-                         <li className="nav-item"><a href="/login" className="nav-link">авторизоваться</a></li>
-                      </ul>
+
+
+                      {
+                         this.props.user &&
+                         this.props.user.authLogin &&
+                         this.props.user.authLogin.isAuth ?
+
+                             <ul className="navbar-nav ml-auto">
+                                <li className="nav-item"><Link to="/products" className="nav-link">Продукты</Link></li>
+                                <li className="nav-item"><Link to="/about" className="nav-link">О нас</Link></li>
+                                <li className="nav-item"><Link to="/contact" className="nav-link">Контакты</Link></li>
+                                <li className="nav-item"><Link to="/addPost" className="nav-link">Добавить пост</Link></li>
+                                <li className="nav-item"><Link to="/logout" className="nav-link">Выйти</Link></li>
+                             </ul>
+                             :
+                             <ul className="navbar-nav ml-auto">
+                                <li className="nav-item"><Link to="/products" className="nav-link">Продукты</Link></li>
+                                <li className="nav-item"><Link to="/about" className="nav-link">О нас</Link></li>
+                                <li className="nav-item"><Link to="/contact" className="nav-link">Контакты</Link></li>
+                                <li className="nav-item"><Link to="/login" className="nav-link">авторизоваться</Link>
+                                </li>
+                             </ul>
+                      }
+
+
                    </div>
                 </div>
              </nav>
@@ -70,4 +90,10 @@ class Header extends Component {
    }
 }
 
-export default Header;
+function mapStateToProps(state) {
+   return {
+      user: state.user_r
+   }
+}
+
+export default withRouter(connect(mapStateToProps)(Header));

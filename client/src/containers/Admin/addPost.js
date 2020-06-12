@@ -44,42 +44,45 @@ class AddPost extends Component {
 
    render() {
       return (
-          <section className="container admin-add-post">
-             <div className="row">
+          <section className="admin-add-post">
+             <div className="container">
 
-                <div className="col-md-12">
+                <div className="row">
 
-                   {this.state.msg ? <Message msg={this.state.msg}/> : null}
+                   <div className="col-md-12">
 
-                   <form onSubmit={e => this.submitForm(e)}>
-                      <div className="custom-file">
-                         <input type="file" className="custom-file-input" id="customFile"
-                                onChange={e => this.inputHandler(e)}/>
-                         <label className="custom-file-label" htmlFor="customFile">{this.state.fileName}</label>
-                      </div>
+                      {this.state.msg ? <Message msg={this.state.msg}/> : null}
+
+                      <form onSubmit={e => this.submitForm(e)}>
+                         <div className="custom-file">
+                            <input type="file" className="custom-file-input" id="customFile"
+                                   onChange={e => this.inputHandler(e)}/>
+                            <label className="custom-file-label" htmlFor="customFile">{this.state.fileName}</label>
+                         </div>
 
 
-                      <input type="submit" value="Загрузить фото" className="btn btn-primary btn-block mt-4 mb-5"/>
+                         <input type="submit" value="Загрузить фото" className="btn btn-primary btn-block mt-4 mb-5"/>
 
-                   </form>
+                      </form>
 
-                   {Object.keys(this.state.uploadedFile).length !== 0 ?
-                       <div className="row mt-5">
-                          <div className="col-md-3 m-auto">
-                             <h3 className="text-center">{this.state.uploadedFile.fileName}</h3>
-                             <img width="100%" src={this.state.uploadedFile.filePath} alt="No file"/>
+                      {Object.keys(this.state.uploadedFile).length !== 0 ?
+                          <div className="row mt-5">
+                             <div className="col-md-3 m-auto">
+                                <h3 className="text-center">{this.state.uploadedFile.fileName}</h3>
+                                <img width="100%" src={this.state.uploadedFile.filePath} alt="No file"/>
+                             </div>
+
+                             <div className="col-md-9 m-auto">
+                                <AddPostDetails filePath={this.state.uploadedFile.filePath} user={this.props.user} />
+                             </div>
+
                           </div>
+                          : null
+                      }
 
-                          <div className="col-md-9 m-auto">
-                             <AddPostDetails filePath={this.state.uploadedFile.filePath} />
-                          </div>
-
-                       </div>
-                       : null
-                   }
+                   </div>
 
                 </div>
-
              </div>
           </section>
       );

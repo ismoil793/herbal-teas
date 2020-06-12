@@ -1,20 +1,22 @@
 import React from 'react';
-import HomeSlider from "../Home/HomeSlider";
 
 const About = () => {
    return (
-       <div className="container">
-          <div className="row">
-             <div className="col-lg-12">
 
-                <div>
-                   <HomeSlider/>
+       <section>
+          <div className="container">
+             <div className="row">
+                <div className="col-lg-12">
+
+                   <div>
+                      about
+                   </div>
+
+
                 </div>
-
-
              </div>
           </div>
-       </div>
+       </section>
    );
 };
 

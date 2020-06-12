@@ -9,13 +9,24 @@ a {
     transition: all 300ms ease-in-out;
 }
 
+section {
+    background-image: url("../../images/barg-bg.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+}
+
 
 /*=============================
             Header
 ===============================*/
 
-header.header {
+header {
     position: relative;
+}
+
+header nav {
+    background-color: #EDF3E0;
 }
 
 
@@ -98,11 +109,38 @@ section.admin-add-post {
 
 
 /*=============================
+            Login
+===============================*/
+
+section.login-user {
+    padding: 5% 0;
+}
+
+.form-control {
+    background: #EEF4EC !important;
+    color: #000000 !important;
+    border-radius: 10px;
+}
+
+button.form-control {
+    background: #88AD3F !important;
+    color: #ffffff !important;
+}
+
+/*=============================
             Products
 ===============================*/
 
+section.main-products {
+    padding-top: 0;
+}
+
 .product {
     cursor: pointer;
+}
+
+.product .text {
+    border-top: 2px solid #F0F0F0;
 }
 
 .product .img-prod {
@@ -135,6 +173,19 @@ section.admin-add-post {
 
 .product:hover .pricing {
     opacity: 1;
+}
+
+.products-component {
+    padding-top: 5%;
+}
+
+
+/*=============================
+            Footer
+===============================*/
+
+footer {
+    background-color: #EDF4EC;
 }
 
 
