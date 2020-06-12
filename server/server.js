@@ -38,9 +38,14 @@ app.post("/api/upload", (req, res) => {
    }
 
    let randStr = Math.round(Math.random() * 10000).toString();
-
    const file = req.files.file;
-   file.mv(`${__dirname}/../client/public/uploads/${randStr}${file.name}`, err => {
+
+   const filePath = process.env.NODE_ENV === 'production' ?
+       `${__dirname}/../client/build/uploads/${randStr}${file.name}`
+       : `${__dirname}/../client/public/uploads/${randStr}${file.name}`;
+
+
+   file.mv(filePath, err => {
       if (err) {
          console.error(err);
          return res.status(500).send(err)
