@@ -40,23 +40,23 @@ app.post("/api/upload", (req, res) => {
    let randStr = Math.round(Math.random() * 10000).toString();
    const file = req.files.file;
 
-   if(process.env.NODE_ENV === "production") {
+   // if(process.env.NODE_ENV === "production") {
+   //
+   //    file.mv(`${__dirname}/../client/build/uploads/${randStr}${file.name}`, err => {
+   //       if (err) {
+   //          console.error(err);
+   //          console.log(`${__dirname}/../client/build/uploads/${randStr}${file.name}`);
+   //          return res.status(500).send(`${__dirname}/../client/build/uploads/${randStr}${file.name}`)
+   //       }
+   //
+   //       res.json({
+   //          fileName: randStr + file.name,
+   //          filePath: `/uploads/${randStr + file.name}`
+   //       })
+   //    })
+   // }
 
-      file.mv(`${__dirname}/../client/build/uploads/${randStr}${file.name}`, err => {
-         if (err) {
-            console.error(err);
-            console.log(`${__dirname}/../client/build/uploads/${randStr}${file.name}`);
-            return res.status(500).send(`${__dirname}/../client/build/uploads/${randStr}${file.name}`)
-         }
-
-         res.json({
-            fileName: randStr + file.name,
-            filePath: `/uploads/${randStr + file.name}`
-         })
-      })
-   }
-
-   else {
+   // else {
 
       file.mv(`${__dirname}/../client/public/uploads/${randStr}${file.name}`, err => {
          if (err) {
@@ -69,7 +69,7 @@ app.post("/api/upload", (req, res) => {
             filePath: `/uploads/${randStr + file.name}`
          })
       })
-   }
+   // }
 
 });
 
