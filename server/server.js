@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(cookiesParser());
 app.use(fileUpload());
 
-// app.use(express.static("client/build"));  // needed for production
+// app.use(express.static("client/build"));  // needed for: production
 
 
 //-------------------------------------------------------------------------- FILES //
