@@ -41,12 +41,6 @@ class AddPostDetails extends Component {
       return (
           <div>
 
-             {
-                this.props.post && this.props.post.newPost && this.props.post.newPost.post ?
-                    <p>Пост успешно добавлен!</p>
-                    : null
-             }
-
              <form onSubmit={e => this.submitForm(e)}>
                 <input
                     className="form-control mt-4"
@@ -67,6 +61,18 @@ class AddPostDetails extends Component {
 
                 <input type="submit" className="form-control mt-4" value="Добавить пост"/>
              </form>
+
+             {
+                this.props.post && this.props.post.newPost && this.props.post.newPost.post ?
+                    <div className="alert alert-success alert-dismissible fade show" role="alert">
+                       Пост успешно добавлен!
+                       <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                       </button>
+                    </div>
+                    : null
+             }
+
           </div>
       );
    }

@@ -14,7 +14,7 @@ import "./layout.css";
 class Layout extends React.Component {
 
    state = {
-      loading: true
+      loading: false
    };
 
 
