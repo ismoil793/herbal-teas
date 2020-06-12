@@ -45,6 +45,7 @@ app.post("/api/upload", (req, res) => {
       file.mv(`${__dirname}/../client/build/uploads/${randStr}${file.name}`, err => {
          if (err) {
             console.error(err);
+            console.log(`${__dirname}/../client/build/uploads/${randStr}${file.name}`);
             return res.status(500).send(`${__dirname}/../client/build/uploads/${randStr}${file.name}`)
          }
 
