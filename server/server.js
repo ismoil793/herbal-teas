@@ -42,12 +42,10 @@ app.post("/api/upload", (req, res) => {
 
    if(process.env.NODE_ENV === "production") {
 
-      console.log(`${__dirname}/../client/build/uploads/${randStr}${file.name}`);
-
       file.mv(`${__dirname}/../client/build/uploads/${randStr}${file.name}`, err => {
          if (err) {
             console.error(err);
-            return res.status(500).send(err)
+            return res.status(500).send(`${__dirname}/../client/build/uploads/${randStr}${file.name}`)
          }
 
          res.json({
@@ -58,6 +56,7 @@ app.post("/api/upload", (req, res) => {
    }
 
    else {
+
       file.mv(`${__dirname}/../client/public/uploads/${randStr}${file.name}`, err => {
          if (err) {
             console.error(err);
