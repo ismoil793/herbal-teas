@@ -41,6 +41,9 @@ app.post("/api/upload", (req, res) => {
    const file = req.files.file;
 
    if(process.env.NODE_ENV === "production") {
+
+      console.log(`${__dirname}/../client/build/uploads/${randStr}${file.name}`);
+
       file.mv(`${__dirname}/../client/build/uploads/${randStr}${file.name}`, err => {
          if (err) {
             console.error(err);
