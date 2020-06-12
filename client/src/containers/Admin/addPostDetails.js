@@ -38,14 +38,11 @@ class AddPostDetails extends Component {
 
 
    render() {
-
-      console.log(this.props)
-
       return (
           <div>
 
              {
-                this.props.post && this.props.post.newPost.post ?
+                this.props.post && this.props.post.newPost && this.props.post.newPost.post ?
                     <p>Пост успешно добавлен!</p>
                     : null
              }

@@ -31,20 +31,13 @@ class AddPost extends Component {
                "Content-Type": "multipart/form-data"
             }
          });
+
          this.setState({
             uploadedFile: res.data,
             msg: "Файл загружен"
          });
       } catch (err) {
-         if (err.response.status === 500) {
-            this.setState({
-               msg: "Problem with server"
-            })
-         } else {
-            this.setState({
-               msg: err.response.data.msg
-            })
-         }
+         console.log(err)
       }
 
    };
