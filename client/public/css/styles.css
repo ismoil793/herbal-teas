@@ -55,6 +55,11 @@ header nav {
     display: none;
 }
 
+.goog-text-highlight {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
 .goog-te-gadget img {
     background-image: url("../images/global.png") !important;
     background-position: 0 0 !important;

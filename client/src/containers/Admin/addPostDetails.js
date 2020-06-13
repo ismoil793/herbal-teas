@@ -34,6 +34,11 @@ class AddPostDetails extends Component {
 
       this.props.dispatch(addPost(formData))
 
+      this.setState({
+         productName: "",
+         description: ""
+      })
+
    };
 
 
