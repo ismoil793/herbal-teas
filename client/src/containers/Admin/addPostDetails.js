@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {addPost} from "../../actions";
+import {addPost, clearPost} from "../../actions";
 import {connect} from "react-redux";
 
 class AddPostDetails extends Component {
@@ -8,6 +8,10 @@ class AddPostDetails extends Component {
       productName: "",
       description: ""
    };
+
+   componentWillUnmount() {
+      this.props.dispatch(clearPost())
+   }
 
    handleProductChange = (e) => {
       this.setState({
@@ -29,10 +33,11 @@ class AddPostDetails extends Component {
          productName: this.state.productName,
          description: this.state.description,
          imagePathName: this.props.filePath,
+         imageName: this.props.fileName,
          ownerId: this.props.user.authLogin.id
       };
 
-      this.props.dispatch(addPost(formData))
+      this.props.dispatch(addPost(formData));
 
       this.setState({
          productName: "",

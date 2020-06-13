@@ -32,26 +32,11 @@ const Footer = () => {
                          <li><Link to="/products" className="py-2 d-block">Продукты</Link></li>
                          <li><Link to="/about" className="py-2 d-block">О нас</Link></li>
                          <li><Link to="/contacts" className="py-2 d-block">Контакты</Link></li>
+                         <li><Link to="/login" className="py-2 d-block">Авторизоваться</Link></li>
                       </ul>
                    </div>
                 </div>
-                {/*<div className="col-md-4">*/}
-                {/*   <div className="ftco-footer-widget mb-4">*/}
-                {/*      <h2 className="ftco-heading-2">Help</h2>*/}
-                {/*      <div className="d-flex">*/}
-                {/*         <ul className="list-unstyled mr-l-5 pr-l-3 mr-4">*/}
-                {/*            <li><Link to="#" className="py-2 d-block">Shipping Information</Link></li>*/}
-                {/*            <li><Link to="#" className="py-2 d-block">Returns &amp; Exchange</Link></li>*/}
-                {/*            <li><Link to="#" className="py-2 d-block">Terms &amp; Conditions</Link></li>*/}
-                {/*            <li><Link to="#" className="py-2 d-block">Privacy Policy</Link></li>*/}
-                {/*         </ul>*/}
-                {/*         /!*<ul className="list-unstyled">*!/*/}
-                {/*         /!*   <li><Link to="#" className="py-2 d-block">FAQs</Link></li>*!/*/}
-                {/*         /!*   <li><Link to="#" className="py-2 d-block">Contact</Link></li>*!/*/}
-                {/*         /!*</ul>*!/*/}
-                {/*      </div>*/}
-                {/*   </div>*/}
-                {/*</div>*/}
+
                 <div className="col-md">
                    <div className="ftco-footer-widget mb-4">
                       <h2 className="ftco-heading-2">Have a Questions?</h2>
@@ -74,8 +59,8 @@ const Footer = () => {
                    <p>
                       Copyright &copy;
                       <script>document.write(new Date().getFullYear());</script>
-                      All rights reserved | This template is made with <FontAwesome name="heart"/> by <a
-                          href="https://ismoil793.github.io" target="_blank">Ismoil</a>
+                      All rights reserved | made with <FontAwesome name="heart"/> by <a
+                          href="https://ismoil793.github.io" target="_blank">switch-case</a>
                    </p>
                 </div>
              </div>

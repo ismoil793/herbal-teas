@@ -6,7 +6,7 @@ const HomeSlider = () => {
 
        <div>
 
-          <section id="home-section" className="hero">
+          <div id="home-section" className="hero">
 
 
              <div>
@@ -46,10 +46,10 @@ const HomeSlider = () => {
              </div>
 
 
-          </section>
+          </div>
 
 
-          <section className="ftco-section">
+          <div className="ftco-section">
              <div className="container">
                 <div className="row no-gutters ftco-services">
                    <div className="col-md-3 text-center d-flex align-self-stretch ">
@@ -99,7 +99,7 @@ const HomeSlider = () => {
                    </div>
                 </div>
              </div>
-          </section>
+          </div>
        </div>
    );
 };

@@ -113,7 +113,11 @@ class AddPost extends Component {
                              </div>
 
                              <div className="col-md-9 m-auto">
-                                <AddPostDetails filePath={this.state.uploadedFile} user={this.props.user}/>
+                                <AddPostDetails
+                                    filePath={this.state.uploadedFile}
+                                    user={this.props.user}
+                                    fileName={this.state.fileName}
+                                />
                              </div>
 
                           </div>

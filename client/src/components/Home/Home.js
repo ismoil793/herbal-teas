@@ -14,12 +14,13 @@ const Home = () => {
    return (
        <main className="main">
 
-          <HomeSlider/>
+          <section>
+             <HomeSlider/>
 
-          <ProductTypes/>
+             <ProductTypes/>
 
-          <Products/>
-
+             <Products/>
+          </section>
        </main>
    )
 };

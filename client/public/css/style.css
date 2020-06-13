@@ -11269,7 +11269,7 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
-        background: #000000 !important;
+        background: #ffffff !important;
         position: relative;
         top: 0;
         padding: 10px 15px;
@@ -11324,11 +11324,11 @@ h1, h2, h3, h4, h5,
         padding-right: 0;
         padding-top: .9rem;
         padding-bottom: .9rem;
-        color: rgba(255, 255, 255, 0.7);
+        color: #000000;
     }
 
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-        color: #fff;
+        color: #88AD3F;
     }
 }
 
@@ -11412,7 +11412,7 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: #88AD3F  !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -11496,7 +11496,7 @@ h1, h2, h3, h4, h5,
     -webkit-transition: .3s all ease-out;
     -o-transition: .3s all ease-out;
     transition: .3s all ease-out;
-    background: #000000 !important;
+    background: #ffffff !important;
 }
 
 .ftco-navbar-light.scrolled.sleep {
@@ -11887,6 +11887,9 @@ h1, h2, h3, h4, h5,
 @media (max-width: 767.98px) {
     .owl-carousel.home-slider .owl-dots {
         bottom: 5px;
+    }
+    .mouse {
+        display: none;
     }
 }
 
@@ -12539,7 +12542,7 @@ h1, h2, h3, h4, h5,
 .table tbody tr td {
     text-align: center !important;
     vertical-align: middle;
-    padding: 40px 10px;
+    padding: 10px 10px;
     border: 1px solid transparent !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
 }

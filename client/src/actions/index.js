@@ -11,6 +11,13 @@ export function addPost(postData) {
    }
 }
 
+export function clearPost() {
+   return {
+      type: "CLEAR_POST",
+      payload: null
+   }
+}
+
 export function auth() {
    const request = axios.get(`/api/auth`)
        .then(response => response.data);
@@ -59,6 +66,27 @@ export function getPostsCount() {
 
    return {
       type: "GET_POSTS_COUNT",
+      payload: request
+   }
+}
+
+
+export function getAllPosts() {
+   const request = axios.get('/api/getAllPosts')
+       .then(response => response.data)
+
+   return {
+      type: "GET_ALL_POSTS",
+      payload: request
+   }
+}
+
+export function deletePost(id) {
+   const request = axios.delete(`/api/delete_post?id=${id}`)
+       .then(response => response.data);
+
+   return {
+      type: "DELETE_POST",
       payload: request
    }
 }

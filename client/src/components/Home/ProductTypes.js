@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductTypes = () => {
    return (
-       <section className="ftco-section ftco-category ftco-no-pt">
+       <div className="ftco-section ftco-category ftco-no-pt pb-0">
           <div className="container">
              <div className="row">
                 <div className="col-md-8">
@@ -11,8 +11,10 @@ const ProductTypes = () => {
                          <div className="category-wrap-2 img align-self-stretch d-flex"
                               style={{backgroundImage: "url(images/category.jpg)"}}>
                             <div className="text text-center">
-                               <h2>Травяные чаи</h2>
-                               <p>Защитят ваше здоровье</p>
+                               <div className="title-wrap">
+                                  <h2>Травяные чаи</h2>
+                                  <p>Защитят ваше здоровье</p>
+                               </div>
                                <p><a href="#watch-products" className="btn btn-primary">Посмотреть продукты</a></p>
                             </div>
                          </div>
@@ -42,7 +44,7 @@ const ProductTypes = () => {
                       </div>
                    </div>
                    <div className="category-wrap img d-flex align-items-end"
-                        style={{backgroundImage: "url(images/category-4.jpg)"}}>
+                        style={{backgroundImage: "url(images/category-4.jpeg)"}}>
                       <div className="text px-3 py-1">
                          <h2 className="mb-0"><a>Dried</a></h2>
                       </div>
@@ -50,7 +52,7 @@ const ProductTypes = () => {
                 </div>
              </div>
           </div>
-       </section>
+       </div>
    );
 };
 

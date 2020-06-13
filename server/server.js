@@ -93,6 +93,15 @@ app.get("/api/getPost", (req, res) => {
 });
 
 
+app.get("/api/getAllPosts", (req, res) => {
+
+   Post.find((err, doc) => {
+      if (err) return res.status(400).send(err);
+      res.send(doc);
+   })
+});
+
+
 app.get("/api/posts", (req, res) => {
    // localhost:3000/api/posts?skip=3&limit=10&order=asc
    let skip = parseInt(req.query.skip);

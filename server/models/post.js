@@ -14,7 +14,12 @@ const postSchema = mongoose.Schema({
    imagePathName: {
       type: String,
       required: true,
-      maxlength: 300
+      maxlength: 400
+   },
+   imageName: {
+      type: String,
+      required: true,
+      maxlength: 400
    },
    ownerId: {
       type: String,

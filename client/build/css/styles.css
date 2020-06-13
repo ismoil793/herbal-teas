@@ -10,10 +10,10 @@ a {
 }
 
 section {
-    background-image: url("../../images/barg-bg.png");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: auto;
+    /*background-image: url("../../images/barg-bg.png");*/
+    /*background-repeat: repeat;*/
+    /*background-position: center;*/
+    /*background-size: auto;*/
 }
 
 
@@ -26,9 +26,13 @@ header {
 }
 
 header nav {
-    background-color: #EDF3E0;
+    background-color: #EDF3E0 !important;
+    box-shadow: 0 7px 15px -5px rgba(0, 0, 0, 0.07) !important;
 }
 
+.sd-farm-logo {
+    width: 200px;
+}
 
 .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
     color: #88AD3F;
@@ -133,6 +137,14 @@ button.form-control {
 }
 
 /*=============================
+            About
+===============================*/
+
+section.about-company {
+    padding: 2% 0 5% 0;
+}
+
+/*=============================
             Products
 ===============================*/
 
@@ -161,7 +173,6 @@ section.main-products {
     height: 100%;
 }
 
-
 .product .img-prod .cover {
     left: 0;
     bottom: 0;
@@ -184,6 +195,15 @@ section.main-products {
     padding-top: 5%;
 }
 
+.title-wrap {
+    background: rgba(255,255,255,0.8);
+    /*color: #000000;*/
+}
+
+.loadmore-btn {
+    background-color: #88AD3F;
+    margin-left: 15px;
+}
 
 /*=============================
             Footer

@@ -49,7 +49,8 @@ class Header extends Component {
              <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
                   id="ftco-navbar">
                 <div className="container">
-                   <Link to="/" className="navbar-brand">Vegefoods</Link>
+                   <Link to="/" className="navbar-brand"><img className="sd-farm-logo" src="/images/SD-Farm.png"
+                                                              alt="Herbal teas logo"/></Link>
                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                       <FontAwesome name="bars"/>&nbsp;Меню
@@ -64,10 +65,9 @@ class Header extends Component {
                          this.props.user.authLogin.isAuth ?
 
                              <ul className="navbar-nav ml-auto">
-                                <li className="nav-item"><Link to="/products" className="nav-link">Продукты</Link></li>
-                                <li className="nav-item"><Link to="/about" className="nav-link">О нас</Link></li>
-                                <li className="nav-item"><Link to="/contact" className="nav-link">Контакты</Link></li>
-                                <li className="nav-item"><Link to="/addPost" className="nav-link">Добавить пост</Link></li>
+                                <li className="nav-item"><Link to="/list/products" className="nav-link">Список товаров</Link></li>
+                                <li className="nav-item"><Link to="/addPost" className="nav-link">Добавить пост</Link>
+                                </li>
                                 <li className="nav-item"><Link to="/logout" className="nav-link">Выйти</Link></li>
                              </ul>
                              :
@@ -75,8 +75,8 @@ class Header extends Component {
                                 <li className="nav-item"><Link to="/products" className="nav-link">Продукты</Link></li>
                                 <li className="nav-item"><Link to="/about" className="nav-link">О нас</Link></li>
                                 <li className="nav-item"><Link to="/contact" className="nav-link">Контакты</Link></li>
-                                <li className="nav-item"><Link to="/login" className="nav-link">авторизоваться</Link>
-                                </li>
+                                {/*<li className="nav-item"><Link to="/login" className="nav-link">авторизоваться</Link>*/}
+                                {/*</li>*/}
                              </ul>
                       }
 

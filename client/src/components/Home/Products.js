@@ -75,7 +75,7 @@ class Products extends React.Component {
       }
 
       return (
-          <section className="ftco-section main-products">
+          <div className="ftco-section main-products">
              <div className="container">
                 <div className="row justify-content-center mb-3 pb-3">
                    <div className="col-md-12 heading-section text-center">
@@ -100,7 +100,7 @@ class Products extends React.Component {
                 {
                    this.count > 8 ?
                        <div className="row">
-                          <button className="btn btn-info" onClick={this.loadMore}>
+                          <button className="btn btn-info loadmore-btn" onClick={this.loadMore}>
                              Load More
                           </button>
                        </div>
@@ -110,7 +110,7 @@ class Products extends React.Component {
 
 
              </div>
-          </section>
+          </div>
       )
    }
 }
