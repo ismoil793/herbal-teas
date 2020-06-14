@@ -8,13 +8,23 @@ const postSchema = mongoose.Schema({
    },
    description: {
       type: String,
-      maxlength: 100,
-      default: "n/a"
+      required: true
+   },
+   productProperties: {
+      type: String,
+      required: true
+   },
+   productStructure: {
+     type: String,
+      required: true
+   },
+   productMaking: {
+      type: String,
+      required: true
    },
    imagePathName: {
       type: String,
-      required: true,
-      maxlength: 400
+      required: true
    },
    imageName: {
       type: String,

@@ -1,6 +1,7 @@
 import React from 'react';
 import {getPosts, getPostsCount} from "../../actions";
 import {connect} from "react-redux";
+import {Link} from "react-router-dom";
 
 
 class Products extends React.Component {
@@ -19,7 +20,7 @@ class Products extends React.Component {
       if(posts.list && posts.list.length > 0) {
          return posts.list.map((item, i) =>(
              <div key={i} className="col-md-6 col-lg-3">
-                <div className="product">
+                <Link to={`/product/${item._id}`} className="product">
                    <div className="img-prod">
 
                       <img className="img-fluid" src={item.imagePathName}
@@ -37,7 +38,7 @@ class Products extends React.Component {
                          </div>
                       </div>
                    </div>
-                </div>
+                </Link>
              </div>
          ))
       }
@@ -59,8 +60,6 @@ class Products extends React.Component {
       let count = this.props.posts.list.length;
       this.props.dispatch(getPosts(1, count, "desc", this.props.posts.list));
 
-      console.log(this.count)
-
       if (this.count) {
          if (count === this.count) {
             this.flag = true;
@@ -74,44 +73,46 @@ class Products extends React.Component {
          this.count = this.props.posts.count;
       }
 
-      return (
-          <div className="ftco-section main-products">
-             <div className="container">
-                <div className="row justify-content-center mb-3 pb-3">
-                   <div className="col-md-12 heading-section text-center">
-                      <span id="watch-products" className="subheading"> <strong>#Продукция</strong></span>
-                      <h2 className="mb-4">Наши продукты</h2>
-                      <p>100% натуральное растительное происхождение.
-                         Гарантированное качество и безопасность.</p>
+      if (this.props.posts && this.props.posts.list) {
+
+         return (
+             <div className="ftco-section main-products">
+                <div className="container">
+                   <div className="row justify-content-center mb-3 pb-3">
+                      <div className="col-md-12 heading-section text-center">
+                         <span id="watch-products" className="subheading"> <strong>#Продукция</strong></span>
+                         <h2 className="mb-4">Наши продукты</h2>
+                         <p>100% натуральное растительное происхождение.
+                            Гарантированное качество и безопасность.</p>
+                      </div>
                    </div>
                 </div>
-             </div>
-             <div className="container">
-                <div className="row">
+                <div className="container">
 
+                   <div className="row">
+                      {this.renderProducts(this.props.posts)}
+                   </div>
 
-                   {this.renderProducts(this.props.posts)}
-
+                   {this.renderWarning()}
+                   {
+                      this.count > 8 ?
+                          <div className="row">
+                             <button className="btn btn-info loadmore-btn" onClick={this.loadMore}>
+                                Load More
+                             </button>
+                          </div>
+                          : null
+                   }
                 </div>
-
-                {this.renderWarning()}
-
-
-                {
-                   this.count > 8 ?
-                       <div className="row">
-                          <button className="btn btn-info loadmore-btn" onClick={this.loadMore}>
-                             Load More
-                          </button>
-                       </div>
-                       : null
-                }
-
-
-
              </div>
-          </div>
+         )
+      }
+
+      return (
+          <div className="preloader"><div className="pulse"></div></div>
       )
+
+
    }
 }
 

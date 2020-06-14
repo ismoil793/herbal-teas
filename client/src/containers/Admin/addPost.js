@@ -108,7 +108,7 @@ class AddPost extends Component {
                       {this.state.uploadedFile ?
                           <div className="row mt-5">
                              <div className="col-md-3 m-auto">
-                                <h3 className="text-center">{this.state.fileName}</h3>
+                                <h5 className="text-center">{this.state.fileName}</h5>
                                 <img width="100%" src={this.state.uploadedFile} alt="No file"/>
                              </div>
 

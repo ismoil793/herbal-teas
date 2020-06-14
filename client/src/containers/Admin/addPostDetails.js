@@ -6,12 +6,21 @@ class AddPostDetails extends Component {
 
    state = {
       productName: "",
-      description: ""
+      description: "",
+      properties: "",
+      structure: "",
+      making: ""
    };
 
    componentWillUnmount() {
       this.props.dispatch(clearPost())
    }
+
+   handleDescriptionChange = (e) => {
+      this.setState({
+         description: e.target.value
+      })
+   };
 
    handleProductChange = (e) => {
       this.setState({
@@ -19,9 +28,21 @@ class AddPostDetails extends Component {
       })
    };
 
-   handleDescriptionChange = (e) => {
+   handlePropertiesChange = (e) => {
       this.setState({
-         description: e.target.value
+         properties: e.target.value
+      })
+   };
+
+   handleStructureChange = (e) => {
+      this.setState({
+         structure: e.target.value
+      })
+   };
+
+   handleMakingChange = (e) => {
+      this.setState({
+         making: e.target.value
       })
    };
 
@@ -32,16 +53,24 @@ class AddPostDetails extends Component {
       const formData = {
          productName: this.state.productName,
          description: this.state.description,
+         productProperties: this.state.properties,
+         productStructure: this.state.structure,
+         productMaking: this.state.making,
          imagePathName: this.props.filePath,
          imageName: this.props.fileName,
          ownerId: this.props.user.authLogin.id
       };
 
+      console.log(formData)
+
       this.props.dispatch(addPost(formData));
 
       this.setState({
          productName: "",
-         description: ""
+         description: "",
+         properties: "",
+         structure: "",
+         making: ""
       })
 
    };
@@ -63,11 +92,35 @@ class AddPostDetails extends Component {
                 />
                 <input
                     className="form-control mt-4"
-                    name="description" type="text"
+                    name="product" type="text"
                     placeholder="Описание товара"
                     value={this.state.description}
                     required={true}
                     onChange={e => this.handleDescriptionChange(e)}
+                />
+                <input
+                    className="form-control mt-4"
+                    name="description" type="text"
+                    placeholder="Свойства"
+                    value={this.state.properties}
+                    required={true}
+                    onChange={e => this.handlePropertiesChange(e)}
+                />
+                <input
+                    className="form-control mt-4"
+                    name="description" type="text"
+                    placeholder="Состав"
+                    value={this.state.structure}
+                    required={true}
+                    onChange={e => this.handleStructureChange(e)}
+                />
+                <input
+                    className="form-control mt-4"
+                    name="description" type="text"
+                    placeholder="Приготовление"
+                    value={this.state.making}
+                    required={true}
+                    onChange={e => this.handleMakingChange(e)}
                 />
 
                 <input type="submit" className="form-control mt-4" value="Добавить пост"/>
@@ -81,7 +134,7 @@ class AddPostDetails extends Component {
                           <span aria-hidden="true">&times;</span>
                        </button>
                     </div>
-                    : null
+                    : <div>Запотните все поля</div>
              }
 
           </div>

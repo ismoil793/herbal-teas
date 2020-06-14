@@ -206,6 +206,19 @@ section.main-products {
 }
 
 /*=============================
+        Product detail
+===============================*/
+
+section.product-detail-page {
+    padding: 5% 0;
+}
+
+
+section.product-detail-page .prod-img{
+    border-radius: 10px;
+}
+
+/*=============================
             Footer
 ===============================*/
 
@@ -217,8 +230,6 @@ footer {
 /*=============================
             LOADER
 ===============================*/
-
-
 .preloader {
     position: fixed;
     left: 0;

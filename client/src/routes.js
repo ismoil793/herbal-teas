@@ -9,6 +9,7 @@ import Layout from "./hoc/layout";
 import Login from "./containers/Login";
 import Logout from "./containers/Logout";
 import Products_c from "./components/Products/products_c";
+import ProductsDetail from "./containers/ProductsDetail";
 import ManageProducts from "./containers/Admin/ManageProducts";
 
 import Auth from "./hoc/auth"
@@ -27,6 +28,7 @@ const Routes = () => {
              <Route path="/login" exact component={Auth(Login, false)} />
              <Route path="/logout" exact component={Auth(Logout, true)} />
              <Route path="/addPost" exact component={Auth(AddPost, true)} />
+             <Route path="/product/:id" exact component={Auth(ProductsDetail, null)} />
              <Route path="/list/products" exact component={Auth(ManageProducts, true)} />
              <Route path="/products" exact component={Auth(Products_c, null)} />
              <Route path="/about" exact component={Auth(About, null)} />

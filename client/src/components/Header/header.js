@@ -30,7 +30,7 @@ class Header extends Component {
                                <div className="icon mr-2 d-flex justify-content-center align-items-center">
                                   <FontAwesome name="envelope"/>
                                </div>
-                               <a href="mailto:someone@yoursite.com" className="text">youremail@email.com</a>
+                               <a href="mailto:abdulazizsh0360@gmail.com" className="text">abdulazizsh0360@gmail.com</a>
                             </div>
 
                             <div className="col-md pr-4 d-flex topper align-items-center">

@@ -13,6 +13,10 @@ export default function (state = {}, action) {
          return {...state, allPosts: action.payload};
       case("GET_POSTS_COUNT"):
          return {...state, count: action.payload};
+      case("GET_POST"):
+         return {...state, post: action.payload};
+      case("POST_CLEAR"):
+         return {...state, post: action.payload};
 
       default:
          return state;

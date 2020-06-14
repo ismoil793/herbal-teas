@@ -40,6 +40,26 @@ export function loginUser({email, password}) {
    }
 }
 
+
+export function getPost(id) {
+   const request = axios.get(`/api/getPost?id=${id}`)
+       .then(response => response.data)
+
+   return {
+      type: "GET_POST",
+      payload: request
+   }
+
+}
+
+export function postClear() {
+   return {
+      type: "POST_CLEAR",
+      payload: null
+   }
+}
+
+
 export function getPosts(limit = 10, start = 0, order = "asc", list = "") {
 
    const request = axios.get(`/api/posts/?limit=${limit}&skip=${start}&order=${order}`)
