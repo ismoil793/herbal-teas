@@ -26,7 +26,7 @@ class Products extends React.Component {
                       <img className="img-fluid" src={item.imagePathName}
                            alt={item.imagePathName}/>
                       <div className="overlay"></div>
-                      <div className="cover p-2">
+                      <div className="cover p-1">
                          {item.description}
                       </div>
 
