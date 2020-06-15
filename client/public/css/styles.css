@@ -83,6 +83,10 @@ body {
     top: 0 !important;
 }
 
+.topper:nth-child(2) {
+    text-transform: unset;
+}
+
 .topper:last-child {
     justify-content: flex-end;
 }
@@ -100,14 +104,15 @@ section#home-section {
     position: relative;
 }
 
-.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
     -ms-touch-action: auto;
     touch-action: auto;
 }
 
 .owl-carousel.home-slider .slider-item .slider-text h1 {
-    background-color: rgba(171,202,108, 0.5);
+    background-color: rgba(171, 202, 108, 0.5);
 }
+
 /*=============================
            Add Post
 ===============================*/
@@ -141,7 +146,13 @@ button.form-control {
 ===============================*/
 
 section.about-company {
-    padding: 2% 0 5% 0;
+    padding: 0;
+}
+
+section.about-company .hero-wrap h1 {
+    font-size: 5vw !important;
+    font-family: "Amatic SC", cursive !important;
+    background-color: rgba(171, 202, 108, 0.5);
 }
 
 /*=============================
@@ -150,6 +161,12 @@ section.about-company {
 
 section.main-products {
     padding-top: 0;
+}
+
+section.products-component .hero-wrap h1 {
+    font-size: 5vw !important;
+    font-family: "Amatic SC", cursive !important;
+    background-color: rgba(171, 202, 108, 0.5);
 }
 
 .product {
@@ -192,11 +209,11 @@ section.main-products {
 }
 
 .products-component {
-    padding-top: 5%;
+    padding-top: 0;
 }
 
 .title-wrap {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     /*color: #000000;*/
 }
 
@@ -204,6 +221,19 @@ section.main-products {
     background-color: #88AD3F;
     margin-left: 15px;
 }
+
+
+/*=============================
+            Contacts
+===============================*/
+
+section.company-contacts .hero-wrap h1 {
+    font-size: 5vw !important;
+    font-family: "Amatic SC", cursive !important;
+    background-color: rgba(171, 202, 108, 0.5);
+}
+
+
 
 /*=============================
         Product detail
@@ -214,8 +244,12 @@ section.product-detail-page {
 }
 
 
-section.product-detail-page .prod-img{
+section.product-detail-page .prod-img {
     border-radius: 10px;
+}
+
+section.product-detail-page .product-details span {
+    color: #88AD3F;
 }
 
 /*=============================
@@ -226,6 +260,65 @@ footer {
     background-color: #EDF4EC;
 }
 
+footer .ftco-footer-widget.mb-4 ul li span.f-icon {
+    font-size: 20px;
+}
+
+footer .ftco-footer-widget.mb-4 ul li:first-child span.f-icon {
+    color: #D34C37;
+}
+
+footer .ftco-footer-widget.mb-4 ul li:nth-child(2) span.f-icon {
+    color: #44A63F;
+}
+
+footer .ftco-footer-widget.mb-4 ul li:last-child span.f-icon {
+    color: #88AD3F;
+}
+
+
+footer ul.ftco-footer-social li a {
+    background: transparent;
+}
+
+.ftco-footer-social li a {
+    height: 40px;
+    width: 40px;
+}
+
+footer ul.ftco-footer-social li:first-child a span {
+    color: #49A6E1;
+    font-size: 40px;
+}
+
+footer ul.ftco-footer-social li:nth-child(2) a {
+    border-radius: 50%;
+    background-color: #3F589F;
+    margin-left: 10px;
+}
+
+footer ul.ftco-footer-social li:nth-child(2) a span {
+    color: #ffffff;
+}
+
+
+footer ul.ftco-footer-social li:last-child a {
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    margin-left: 10px;
+}
+
+footer ul.ftco-footer-social li:last-child a span {
+    color: #ffffff;
+}
+
+footer .switch-case span{
+    color: #C82C00;
+}
+
+.ftco-footer .ftco-footer-widget ul li a {
+    text-decoration: underline;
+}
 
 /*=============================
             LOADER

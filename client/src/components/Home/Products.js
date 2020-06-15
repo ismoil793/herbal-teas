@@ -17,8 +17,8 @@ class Products extends React.Component {
 
    renderProducts = (posts) => {
 
-      if(posts.list && posts.list.length > 0) {
-         return posts.list.map((item, i) =>(
+      if (posts.list && posts.list.length > 0) {
+         return posts.list.map((item, i) => (
              <div key={i} className="col-md-6 col-lg-3">
                 <Link to={`/product/${item._id}`} className="product">
                    <div className="img-prod">
@@ -77,6 +77,7 @@ class Products extends React.Component {
 
          return (
              <div className="ftco-section main-products">
+
                 <div className="container">
                    <div className="row justify-content-center mb-3 pb-3">
                       <div className="col-md-12 heading-section text-center">
@@ -109,7 +110,9 @@ class Products extends React.Component {
       }
 
       return (
-          <div className="preloader"><div className="pulse"></div></div>
+          <div className="preloader">
+             <div className="pulse"></div>
+          </div>
       )
 
 

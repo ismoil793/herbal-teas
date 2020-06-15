@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import FontAwesome from "react-fontawesome";
 import {Link, withRouter} from "react-router-dom";
 import {connect} from "react-redux"
+import $ from "jquery"
 
 // import "../../js/jquery-3.2.1.min"
 
@@ -10,6 +11,20 @@ import {connect} from "react-redux"
 
 class Header extends Component {
 
+   componentDidMount() {
+
+      $('.mouse-icon').click(function () {
+         $('html,body').stop().animate(
+             {scrollTop: 0}, 'slow', 'swing'
+         );
+      });
+
+
+      $('.navbar-toggler').click(function () {
+         $("#ftco-nav").toggle()
+      })
+
+   }
 
    render() {
       return (
@@ -65,16 +80,18 @@ class Header extends Component {
                          this.props.user.authLogin.isAuth ?
 
                              <ul className="navbar-nav ml-auto">
-                                <li className="nav-item"><Link to="/list/products" className="nav-link">Список товаров</Link></li>
+                                <li className="nav-item"><Link to="/list/products" className="nav-link">Список
+                                   товаров</Link></li>
                                 <li className="nav-item"><Link to="/addPost" className="nav-link">Добавить пост</Link>
                                 </li>
                                 <li className="nav-item"><Link to="/logout" className="nav-link">Выйти</Link></li>
                              </ul>
                              :
                              <ul className="navbar-nav ml-auto">
+                                <li className="nav-item"><Link to="/" className="nav-link">Главная</Link></li>
                                 <li className="nav-item"><Link to="/products" className="nav-link">Продукты</Link></li>
                                 <li className="nav-item"><Link to="/about" className="nav-link">О нас</Link></li>
-                                <li className="nav-item"><Link to="/contact" className="nav-link">Контакты</Link></li>
+                                <li className="nav-item"><Link to="/contacts" className="nav-link">Контакты</Link></li>
                                 {/*<li className="nav-item"><Link to="/login" className="nav-link">авторизоваться</Link>*/}
                                 {/*</li>*/}
                              </ul>

@@ -4,6 +4,7 @@ import {Switch, Route} from "react-router-dom";
 import NotFound from "./components/404/NotFound";
 import Home from "./components/Home/Home";
 import About from "./components/About/about";
+import Contacts from "./components/Contacts/contacts";
 import AddPost from "./containers/Admin/addPost";
 import Layout from "./hoc/layout";
 import Login from "./containers/Login";
@@ -32,6 +33,7 @@ const Routes = () => {
              <Route path="/list/products" exact component={Auth(ManageProducts, true)} />
              <Route path="/products" exact component={Auth(Products_c, null)} />
              <Route path="/about" exact component={Auth(About, null)} />
+             <Route path="/contacts" exact component={Auth(Contacts, null)} />
              <Route path="/" exact component={Auth(Home, null)} />
              <Route path="*" component={Auth(NotFound, null)}/>
           </Switch>

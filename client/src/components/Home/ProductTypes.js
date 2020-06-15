@@ -23,13 +23,13 @@ const ProductTypes = () => {
                          <div className="category-wrap img mb-4 d-flex align-items-end"
                               style={{backgroundImage: "url(images/category-1.jpg)"}}>
                             <div className="text px-3 py-1">
-                               <h2 className="mb-0"><a>Fruits</a></h2>
+                               <h2 className="mb-0"><a>Растения</a></h2>
                             </div>
                          </div>
                          <div className="category-wrap img d-flex align-items-end"
                               style={{backgroundImage: "url(images/category-2.jpg)"}}>
                             <div className="text px-3 py-1">
-                               <h2 className="mb-0"><a>Vegetables</a></h2>
+                               <h2 className="mb-0"><a>Чай</a></h2>
                             </div>
                          </div>
                       </div>
@@ -40,13 +40,13 @@ const ProductTypes = () => {
                    <div className="category-wrap img mb-4 d-flex align-items-end"
                         style={{backgroundImage: "url(images/category-3.jpg)"}}>
                       <div className="text px-3 py-1">
-                         <h2 className="mb-0"><a>Juices</a></h2>
+                         <h2 className="mb-0"><a>Свежие</a></h2>
                       </div>
                    </div>
                    <div className="category-wrap img d-flex align-items-end"
                         style={{backgroundImage: "url(images/category-4.jpeg)"}}>
                       <div className="text px-3 py-1">
-                         <h2 className="mb-0"><a>Dried</a></h2>
+                         <h2 className="mb-0"><a>Травяные чаи</a></h2>
                       </div>
                    </div>
                 </div>

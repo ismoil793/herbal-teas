@@ -16,10 +16,10 @@ const Footer = () => {
              <div className="row mb-5">
                 <div className="col-md">
                    <div className="ftco-footer-widget mb-4">
-                      <h2 className="ftco-heading-2">Vegefoods</h2>
-                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                      <h2 className="ftco-heading-2">SD Farm</h2>
+                      <p>Soft Darmon Farm. Производство высококачественных травяных чаев.</p>
                       <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                         <li className=""><a href="#"><FontAwesome name="twitter"/></a></li>
+                         <li className=""><a href="#"><FontAwesome name="telegram"/></a></li>
                          <li className=""><a href="#"><FontAwesome name="facebook"/></a></li>
                          <li className=""><a href="#"><FontAwesome name="instagram"/></a></li>
                       </ul>
@@ -42,16 +42,16 @@ const Footer = () => {
                       <h2 className="ftco-heading-2">У вас есть вопросы?</h2>
                       <div className="block-23 mb-3">
                          <ul>
-                            <li><span className="icon icon-map-marker"></span>
-                               <span className="text">
+                            <li><FontAwesome name="map-marker" className="f-icon" />
+                               <span className="text pl-3 pb-2">
                                   Ташкентская область, Ташкентский район, Тюльпан, тысяча родников дом 25
                                </span>
                             </li>
-                            <li><a href="tel:+998909710360"><span className="icon icon-phone"></span><span
-                                className="text">+998 90 9710360</span></a>
+                            <li><a href="tel:+998909710360"><FontAwesome name="phone" className="f-icon" /><span
+                                className="text pl-3">+998 90 9710360</span></a>
                             </li>
-                            <li><a href="mailto:abdulazizsh0360@gmail.com"><span className="icon icon-envelope"></span><span
-                                className="text">abdulazizsh0360@gmail.com</span></a></li>
+                            <li><a href="mailto:abdulazizsh0360@gmail.com"><FontAwesome name="envelope" className="f-icon" /><span
+                                className="text pl-3">abdulazizsh0360@gmail.com</span></a></li>
                          </ul>
                       </div>
                    </div>
@@ -60,9 +60,9 @@ const Footer = () => {
              <div className="row">
                 <div className="col-md-12 text-center">
 
-                   <p>
+                   <p className="switch-case">
                       Копирайт &copy;
-                      <script>document.write(new Date().getFullYear());</script>
+                      {new Date().getFullYear()}<br/>
                       Сделано с <FontAwesome name="heart"/> командой <a
                        href="https://ismoil793.github.io" target="_blank">switch-case</a>
                    </p>
