@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductTypes = () => {
    return (
-       <div className="ftco-section ftco-category ftco-no-pt pb-0">
+       <div className="ftco-section ftco-category ftco-no-pt pb-0 mt-5">
           <div className="container">
              <div className="row">
                 <div className="col-md-8">
