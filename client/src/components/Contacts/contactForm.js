@@ -30,7 +30,7 @@ const ContactForm = () => {
                 </div>
                 <div className="col-md-3 d-flex">
                    <div className="info bg-white p-4">
-                      <p><span>Website</span> <a href="#" target="_blank">yoursite.com</a></p>
+                      <p><span>Website</span> <a href="https://google.com" rel="noopener noreferrer" target="_blank">google.com</a></p>
                    </div>
                 </div>
              </div>
@@ -65,6 +65,7 @@ const ContactForm = () => {
                           frameBorder="0"
                           width="100%"
                           height="572"
+                          title="map"
                       >
                       </iframe>
                    </div>

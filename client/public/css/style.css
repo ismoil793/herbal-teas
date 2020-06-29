@@ -11956,8 +11956,8 @@ h1, h2, h3, h4, h5,
 
 .btn.btn-primary:hover {
     border: 1px solid #82ae46;
-    background: transparent;
-    color: #82ae46;
+    background: #6B8831;
+    color: #ffffff;
 }
 
 .btn.btn-primary.btn-outline-primary {
@@ -12914,7 +12914,7 @@ textarea.form-control {
 
 .ftco-footer {
     font-size: 14px;
-    padding: 7em 0;
+    padding: 7em 0 1em 0;
     color: #000000;
 }
 
@@ -13074,11 +13074,11 @@ textarea.form-control {
 .ftco-services .services {
     display: block;
     width: 100%;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .ftco-services .services .icon {
@@ -13091,11 +13091,11 @@ textarea.form-control {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .ftco-services .services .icon:after {
@@ -13115,11 +13115,11 @@ textarea.form-control {
 .ftco-services .services .icon span {
     font-size: 50px;
     color: #fff;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .ftco-services .services .media-body {
@@ -13143,6 +13143,7 @@ textarea.form-control {
 
 .ftco-services .services:hover .icon, .ftco-services .services:focus .icon {
     background: #82ae46;
+    transform: rotate(360deg);
 }
 
 .ftco-services .services:hover .icon span, .ftco-services .services:focus .icon span {
@@ -13153,6 +13154,11 @@ textarea.form-control {
     display: block;
     width: 100%;
     height: 250px;
+    transition: all 300ms ease-in-out;
+}
+
+.ftco-category .category-wrap:hover {
+    transform: scale(1.1);
 }
 
 .ftco-category .category-wrap .text {

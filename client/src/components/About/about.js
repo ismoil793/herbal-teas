@@ -29,6 +29,7 @@ const About = () => {
                        allowFullScreen
                        width="100%"
                        height="300"
+                       title="about our company"
                    >
                    </iframe>
                 </div>
@@ -69,6 +70,7 @@ const About = () => {
                        frameBorder="0"
                        width="100%"
                        height="300"
+                       title="map"
                    >
                    </iframe>
                 </div>

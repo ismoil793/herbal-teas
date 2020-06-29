@@ -4,7 +4,7 @@ import axios from "axios"
 class Logout extends Component {
 
    logOut = () => {
-      let request = axios.get(`/api/logout`)
+      axios.get(`/api/logout`)
           .then(request => {
              this.props.history.push('/')
           });

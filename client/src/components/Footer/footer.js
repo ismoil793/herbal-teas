@@ -19,9 +19,20 @@ const Footer = () => {
                       <h2 className="ftco-heading-2">SD Farm</h2>
                       <p>Soft Darmon Farm. Производство высококачественных травяных чаев.</p>
                       <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                         <li className=""><a href="#"><FontAwesome name="telegram"/></a></li>
-                         <li className=""><a href="#"><FontAwesome name="facebook"/></a></li>
-                         <li className=""><a href="#"><FontAwesome name="instagram"/></a></li>
+                         <li className="">
+                            <a href="https://google.com" rel="noopener noreferrer" target="_blank">
+                               <FontAwesome name="telegram"/>
+                            </a></li>
+                         <li className="">
+                            <a href="https://google.com" rel="noopener noreferrer" target="_blank">
+                               <FontAwesome name="facebook"/>
+                            </a>
+                         </li>
+                         <li className="">
+                            <a href="https://google.com" rel="noopener noreferrer" target="_blank">
+                               <FontAwesome name="instagram"/>
+                            </a>
+                         </li>
                       </ul>
                    </div>
                 </div>

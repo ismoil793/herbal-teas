@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {auth} from "../actions";
+import Loader from "../UI/Preloader/loader";
 
 export default function (ComposedClass, reload) {
 
@@ -33,7 +34,7 @@ export default function (ComposedClass, reload) {
 
       render() {
          if (this.state.loading) {
-            return <div className="preloader"><div className="pulse"></div></div>
+            return <Loader />
          }
          return (
              <ComposedClass {...this.props} user={this.props.user}/>

@@ -16,7 +16,7 @@ class AddPost extends Component {
 
    inputHandler = (e) => {
 
-      let randStr = Math.round(Math.random() * 10000).toString();
+      let randStr = Date.now().toString();
 
       this.setState({
          file: e.target.files[0],

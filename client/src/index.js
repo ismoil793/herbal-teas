@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import promiseMiddleware from "redux-promise";
-import ReduxThunk from "redux-thunk";
+import ReduxThunk from "redux-thunk";  // to be able to use redux asynchronously
 
 import Routes from "./routes";
 import reducers from "./reducers";

@@ -37,7 +37,7 @@ app.post("/api/upload", (req, res) => {
       })
    }
 
-   let randStr = Math.round(Math.random() * 10000).toString();
+   let randStr = Date.now().toString();
    const file = req.files.file;
 
    if (process.env.NODE_ENV === "production") {

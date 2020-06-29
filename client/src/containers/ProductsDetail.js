@@ -3,6 +3,7 @@ import {getPost, postClear} from "../actions";
 import {connect} from "react-redux";
 import FontAwesome from "react-fontawesome"
 import {Link} from "react-router-dom";
+import Loader from "../UI/Preloader/loader";
 
 class ProductsDetail extends Component {
 
@@ -72,9 +73,7 @@ class ProductsDetail extends Component {
                       {
                          this.props.post && this.props.post.post ?
                              this.renderPost(this.props.post.post)
-                             : <div className="preloader">
-                                <div className="pulse"></div>
-                             </div>
+                             : <Loader/>
                       }
 
                    </div>

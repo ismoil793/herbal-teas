@@ -2,6 +2,7 @@ import React from 'react';
 import {getPosts, getPostsCount} from "../../actions";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
+import Loader from "../../UI/Preloader/loader";
 
 
 class Products extends React.Component {
@@ -110,9 +111,7 @@ class Products extends React.Component {
       }
 
       return (
-          <div className="preloader">
-             <div className="pulse"></div>
-          </div>
+          <Loader />
       )
 
 

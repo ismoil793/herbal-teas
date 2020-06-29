@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import HomeSlider from "./HomeSlider";
 import Products from "./Products";
 import ProductTypes from "./ProductTypes";
@@ -15,6 +15,7 @@ const Home = () => {
        <main className="main">
 
           <section>
+
              <HomeSlider/>
 
              <ProductTypes/>
@@ -26,20 +27,24 @@ const Home = () => {
                 <div className="container mb-5">
                    <div className="row block-9">
                       <div className="col-md-6 order-md-last">
-                         <form action="https://submit-form.com/9_ZvOMAd2jMWED29dz8u-" target="_self" className="bg-white p-4 contact-form">
+                         <form action="https://submit-form.com/9_ZvOMAd2jMWED29dz8u-" target="_self"
+                               className="bg-white p-4 contact-form">
                             <h3 style={{color: "#88AD3F"}}>Свяжитесь с нами</h3>
                             <div className="form-group">
-                               <input type="text" name="Name" required={true} className="form-control" placeholder="Ваше имя"/>
+                               <input type="text" name="Name" required={true} className="form-control"
+                                      placeholder="Ваше имя"/>
                             </div>
                             <div className="form-group">
-                               <input type="email" name="Email" required={true} className="form-control" placeholder="Ваш Email"/>
+                               <input type="email" name="Email" required={true} className="form-control"
+                                      placeholder="Ваш Email"/>
                             </div>
                             <div className="form-group">
-                               <input type="text" name="Subject" required={true} className="form-control" placeholder="Тема"/>
+                               <input type="text" name="Subject" required={true} className="form-control"
+                                      placeholder="Тема"/>
                             </div>
                             <div className="form-group">
                             <textarea name="Message" id="" required={true} cols="30" rows="7" className="form-control"
-                                      placeholder="Сообщение" />
+                                      placeholder="Сообщение"/>
                             </div>
                             <div className="form-group">
                                <input type="submit" value="Отправить" className="btn btn-primary py-3 px-5"/>
@@ -55,6 +60,7 @@ const Home = () => {
                                 frameBorder="0"
                                 width="100%"
                                 height="572"
+                                title="map"
                             >
                             </iframe>
                          </div>
