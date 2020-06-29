@@ -8,7 +8,7 @@ const ContactForm = () => {
                 <div className="w-100"></div>
                 <div className="col-md-3 d-flex">
                    <div className="info bg-white p-4">
-                      <p><span>Адрес:</span> Ташкентская область, Ташкентский район, Тюльпан, тысяча родников дом
+                      <p><span>Адрес:</span> Ташкентская область, Ташкентский район, Кызгалдок, Минг Булок дом
                          25</p>
                    </div>
                 </div>

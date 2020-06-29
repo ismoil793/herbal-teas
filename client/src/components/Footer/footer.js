@@ -55,7 +55,7 @@ const Footer = () => {
                          <ul>
                             <li><FontAwesome name="map-marker" className="f-icon" />
                                <span className="text pl-3 pb-2">
-                                  Ташкентская область, Ташкентский район, Тюльпан, тысяча родников дом 25
+                                  Ташкентская область, Ташкентский район, Кызгалдок, Минг Булок дом 25
                                </span>
                             </li>
                             <li><a href="tel:+998909710360"><FontAwesome name="phone" className="f-icon" /><span
