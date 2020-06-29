@@ -175,6 +175,8 @@ section.products-component .hero-wrap h1 {
 
 .product {
     cursor: pointer;
+    height: 250px;
+    overflow: hidden;
 }
 
 .product .text {

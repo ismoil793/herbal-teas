@@ -12210,6 +12210,7 @@ h1, h2, h3, h4, h5,
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    height: 150px;
 }
 
 .product .img-prod:hover img, .product .img-prod:focus img {
@@ -12260,11 +12261,9 @@ h1, h2, h3, h4, h5,
 }
 
 .product .text h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 16px;
+    margin: 0;
     font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     font-family: "Poppins", Arial, sans-serif;
 }
 
