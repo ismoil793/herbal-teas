@@ -9,7 +9,7 @@
     "concurrently": "^5.2.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.7-alpha.3",
+    "express-fileupload": "^1.1.9",
     "jsonwebtoken": "^8.5.1",
     "moment-js": "^1.1.15",
     "mongoose": "^5.9.18"
