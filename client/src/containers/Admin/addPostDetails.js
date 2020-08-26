@@ -12,6 +12,16 @@ class AddPostDetails extends Component {
       making: ""
    };
 
+   UNSAFE_componentWillReceiveProps(nextProps, nextContext) {
+      if(nextProps.post && nextProps.post.newPost && nextProps.post.newPost.post) {
+      
+        setTimeout(() => {
+          nextProps.history.push('/products')
+        }, 1000)
+      }
+
+   }
+
    componentWillUnmount() {
       this.props.dispatch(clearPost())
    }
