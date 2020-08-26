@@ -75,7 +75,7 @@ class ManageProducts extends Component {
                             <th>Имя</th>
                             <th>Описание</th>
                             <th>Дата</th>
-                            <th>Дата</th>
+                            <th>Файл</th>
                             <th>Удалить</th>
                          </tr>
                          </thead>
