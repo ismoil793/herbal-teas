@@ -1,7 +1,7 @@
 const config = {
    production: {
       SECRET: process.env.SECRET,
-      DATABASE: process.env.MONGODB_URI
+      DATABASE: 'mongodb+srv://Ismoil:InvRCwEfCaJfBCmB@cluster-4k7j7lsk.ntezb.mongodb.net/heroku_4k7j7lsk?retryWrites=true&w=majority'
    },
    default: {
       SECRET: "SUPERSECRETPASSWORD123",
