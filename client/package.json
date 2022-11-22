@@ -15,7 +15,7 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-script-tag": "^1.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-simple-sidenav": "^2.0.0",
     "redux": "^4.0.5",
     "redux-promise": "^0.6.0",
